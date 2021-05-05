@@ -28,8 +28,8 @@
 		/>
 		<meta name="author" content="oldblue" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://disneyface.ga" />
-		<meta property="og:url" content="https://disneyface.ga" />
+		<link rel="canonical" href="https://facematch.ga" />
+		<meta property="og:url" content="https://facematch.ga" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="얼굴로 보는 신의탑 캐릭터 테스트" />
 		<meta
@@ -55,7 +55,7 @@
 	<body class="" style="" aria-hidden="false">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="https://disneyface.ga/">얼굴로 보는 신의탑 캐릭터 테스트</a>
+				<a class="navbar-brand" href="https://facematch.ga/">얼굴로 보는 신의탑 캐릭터 테스트</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -75,17 +75,7 @@
 								oldblue 블로그
 							</a>
 						</li>
-							<li id="goToBlog" class="nav-item active">
-							<a class="nav-link" href="https://disneyface.ga">
-								얼굴로 보는 디즈니 캐릭터 테스트
-							</a>
-						</li>
-							<li id="goToBlog" class="nav-item active">
-							<a class="nav-link" href="https://president.ga">
-								대한민국 대통령상 테스트
-							</a>
-						</li>
-
+						
 						<li
 							class="nav-item active"
 							onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});"
@@ -102,23 +92,24 @@
 			</div>
 		</nav>
 
-		<section class="container d-flex flex-column justify-content-center align-items-center">
-			<span class="select-language">Language</span>
-			<select onchange="changeLanguage(this)" class="custom-select col-8">
-				<option value="ko" lang="ko">한국어</option>
-				<option value="en" lang="en">English</option>
-				<option value="es" lang="es">español</option>
-				<!-- <option value="ja" lang="ja">日本語</option> -->
-				<option value="zh" lang="zh">中文</option>
-				<!-- <option value="vi" lang="vi">tiếng Việt</option>
-				<option value="id" lang="id">Bahasa Indonesia</option>
-				<option value="it" lang="it">Italiano</option>
-				<option value="th" lang="th">ไทย</option> -->
+			<section class="container d-flex flex-column justify-content-center align-items-center">
+			<span class="select-content">다른 테스트(디즈니,나혼렙,대통령,직업)</span>
+			<select onchange="changecontent(this)" class="custom-select col-8">
+				<option value="tog" content="tog">신의탑</option>
+				<option value="disney" content="disney">디즈니 캐릭터</option>
+				<option value="president" content="president">내가 대통령이 될 상인가?</option>
+				<option value="sololevelling" content="sololevelling">나 혼자만 레벨업</option>
+				<!-- <option value="ja" content="ja">日本語</option> -->
+				<option value="job" content="job">나와 닮은 이는 무슨일을 하고있을까?(작업중)</option>
+				<!-- <option value="vi" content="vi">tiếng Việt</option>
+				<option value="id" content="id">Bahasa Indonesia</option>
+				<option value="it" content="it">Italiano</option>
+				<option value="th" content="th">ไทย</option> -->
 			</select>
 		</section>
 		<script>
 			var ua = navigator.userAgent.toLowerCase();
-			function changeLanguage(lang) {
+			function changecontent(content) {
 				if (
 					(navigator.userAgent.indexOf('Mac OS') > 0 &&
 						navigator.userAgent.indexOf('Safari') <= 0) ||
@@ -127,8 +118,8 @@
 				) {
 					if (ua.match('android') != null) {
 						window.open(
-							'googlechrome://navigate?url=disneyface.ga/' +
-								lang.value +
+							'googlechrome://navigate?url=facematch.ga/' +
+								content.value +
 								'/index.html'
 						); //android
 					} else if (
@@ -137,13 +128,13 @@
 						ua.indexOf('ipod') > -1
 					) {
 						window.location.href =
-							'https://disneyface.ga/' + lang.value + '/index.html';
+							'https://facematch.ga/' + content.value + '/index.html';
 					} else {
 						window.location.href =
-							'https://disneyface.ga/' + lang.value + '/index.html';
+							'https://facematch.ga/' + content.value + '/index.html';
 					}
 				} else {
-					window.location.href = 'https://disneyface.ga/' + lang.value + '/index.html';
+					window.location.href = 'https://facematch.ga/' + content.value + '/index.html';
 				}
 			}
 		</script>
@@ -343,8 +334,8 @@
 
 			// the link to your model provided by Teachable Machine export panel  남자것검토 필요
 			let URL;
-			const urlMale = 'https://teachablemachine.withgoogle.com/models/ehdenWEp-/';
-			const urlFemale = 'https://teachablemachine.withgoogle.com/models/js_8OLvjI/';
+			const urlMale = 'https://teachablemachine.withgoogle.com/models/b9W20bs1h/';
+			const urlFemale = 'https://teachablemachine.withgoogle.com/models/kVMI0Fx77/';
 
 			let model, webcam, labelContainer, maxPredictions;
 
@@ -387,7 +378,7 @@
 				if (document.getElementById('gender').checked) {
 					switch (prediction[0].className) {
 						case 'bam':
-							resultTitle = '당신은 스물다섯번째밤';
+							resultTitle = '당신은 교회오빠 스물다섯번째밤';
 							resultExplain =
 								'눈이 너무 초롱초롱하고 다른 사람들에게 밝은 에너지를 주는 당신은 긍정 에너자이저입니다. 한 여자만 바라보는 순결파이지만 아직까지는 주위 친구들을 더 좋아하고 있습니다. 한때 여성들의 로망이었던 교회오빠 스타일!';
 							resultCeleb = "";
@@ -396,7 +387,7 @@
 						
 						
 						case 'kun':
-							resultTitle = '당신은 시크한 쿤아게로아그니스';
+							resultTitle = '당신은 바람둥이 쿤아게로아그니스';
 							resultExplain =
 								'무심한 성격에 첫인상은 나쁜 남자 같지만, 알고 보면 따뜻함이 묻어나는 당신! 시크한 매력에 선뜻 다가가지 못하지만 한번 다가가면 헤어나올 수 없는 브로멘스 매력을 가진 남자입니다. 약간 바람둥이 스타일!';
 							resultCeleb = "";
@@ -418,11 +409,20 @@
 							break;
 						
 						case 'rak':
-							resultTitle = '당신은 라크 레크레이셔';
+							resultTitle = '당신은 츤데레 라크 레크레이셔';
 							resultExplain =
-								'어지간해서는 타협하려고 하지 않고, 본인의 의사를 밀어 붙히는 성격입니다.   단순한 성격에 자주 욱하기도 하지만, 의리도 상당하고, 얼핏 남에게는 험악하지만 부탁을 잘 거절하지 못하는 츤데레 스타일!';
+								'어지간해서는 타협하려고 하지 않고, 본인의 의사를 밀어 붙히는 성격입니다. 단순한 성격에 자주 욱하기도 하지만, 의리도 상당하고, 얼핏 남에게는 험악하지만 부탁을 잘 거절하지 못하는 츤데레 스타일!';
 							resultCeleb = "";
 							break;
+							
+							
+						case 'kallavan':
+							resultTitle = '당신은 선도반장 칼라반';
+							resultExplain =
+								'당신은 의리의 남자이지만 너무 융통성이 없어 다른 사람들에게는 꽉막힌 꼰대 스타일로 보일수도 있습니다. 교칙에 딱맞아야 하는 당신은 선도반장 스타일!';
+							resultCeleb = "";
+							break;	
+							
 
 						default:
 							resultTitle = '알수없음';
@@ -432,7 +432,7 @@
 				} else {
 					switch (prediction[0].className) {
 						case 'hwaryun':
-							resultTitle = '당신은 화련';
+							resultTitle = '당신은 바람둥이 화련';
 							resultExplain =
 								"늘 시크한 무표정이며 기본은 쿨뷰티/쿨데레에 가까우나 평소 언행과 행동도 상당히 터프한 면이 있습니다. 시크한 한 마디를 던지기도 하지만 당신에게 이성이 한번 빠지면 헤어나지 못하는 약간 바람둥이 스타일!";
 							resultCeleb = "";
@@ -449,13 +449,12 @@
 							break;
 							
 							
-						// case 'rachel':
-						// 	resultTitle = '당신은 미움받을 용기가 있는 라헬';
-						// 	resultExplain =
-						// 		'자신이 못생겼다고 생각하고, 잘생긴 사람들과 어울리고 싶어합니다. 남들은 욕할지 몰라도 당신은 충분히 아름답고 모든 사람들에게 잘보일 필요없습니다. 잘보일려고 하는것이 더 스트레스일것입니다. 자신의 신념을 위해 미움받을 용기를 가진 당신은 믿고 나가세요';
-						// 	resultCeleb =
-						// 		'어울리는 남성: 강한 힘으로 당신을 지켜봐주면서 당신과 함께 모험을 떠날수 있는 남성을 찾으세요';
-						// 	break;
+						case 'rachel':
+							resultTitle = '당신은 미움받을 용기가 있는 라헬';
+							resultExplain =
+								"자신이 못생겼다고 생각하고, 잘생긴 사람들과 어울리고 싶어합니다. 남들은 욕할지 몰라도 당신은 충분히 아름답고 모든 사람들에게 잘보일 필요없습니다. 결국 인생의 주인공은 당신이예요. 자신의 신념을 위해 미움받을 용기를 가진 당신! 믿고 나가세요";
+							resultCeleb = "";
+							break;
 							
 							
 						case 'hayuri':
@@ -516,6 +515,9 @@
 						case 'Evankhell':
 							labelTitle = '에반켈';
 							break;
+						case 'rachel':
+							labelTitle = '라헬';
+							break;
 					
 						case 'bam':
 							labelTitle = '스물다섯번째밤';
@@ -531,6 +533,9 @@
 							break;
 						case 'rak':
 							labelTitle = '라크 레크레이셔';
+							break;
+						case 'kallavan':
+							labelTitle = '칼라반';
 							break;
 						default:
 							labelTitle = '알수없음';

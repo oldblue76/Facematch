@@ -137,7 +137,7 @@ body {
 	margin-top: 50px;
 }
 
-.select-language {
+.select-content {
 	font-size: 2rem;
 	line-height: 1.53;
 	text-align: center;
@@ -288,6 +288,27 @@ body {
 	border-radius: 10px;
 	background-color: rgba(235, 166, 190, 1);
 }
+
+.rachel-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.rachel-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+
+
+
 .bam-box {
 	position: absolute;
 	top: 0;
@@ -375,6 +396,26 @@ body {
 	background-color: rgba(27, 175, 234, 1);
 }
 
+.kallavan-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.kallavan-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+
+
+
 .percent-text {
 	font-size: 1rem;
 	color: #ffffff;
@@ -410,10 +451,10 @@ body {
 	font-size: 1.2rem;
 }
 .white-animal-title {
-	color: #3ba363;
+	color: #ff6c0a;
 }
 .white-animal-celeb {
-	color: #3ba363;
+	color: #ff6c0a;
 	font-size: 1.2rem;
 }
 .urec-animal-title {
@@ -430,6 +471,15 @@ body {
 	color: #548dd4;
 	font-size: 1.2rem;
 }
+
+.kallavan-animal-title {
+	color: #2e87e7;
+}
+.kallavan-animal-celeb {
+	color: #2e87e7;
+	font-size: 1.2rem;
+}
+
 .hwaryun-animal-title {
 	color: #3ba363;
 }
@@ -456,6 +506,13 @@ body {
 }
 .Evankhell-animal-celeb {
 	color: #e56995;
+	font-size: 1.2rem;
+}
+.rachel-animal-title {
+	color: #9b6b43;
+}
+.rachel-animal-celeb {
+	color: #9b6b43;
 	font-size: 1.2rem;
 }
 
