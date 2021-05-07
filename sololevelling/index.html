@@ -339,6 +339,11 @@
 
 			// Load the image model and setup the webcam
 			async function init() {
+				// if (document.getElementById('gender').checked) {
+				// 	URL = urlMale;
+				// } else {
+				// 	URL = urlFemale;
+				// }
 				const modelURL = URL + 'model.json';
 				const metadataURL = URL + 'metadata.json';
 				model = await tmImage.load(modelURL, metadataURL);
@@ -356,19 +361,14 @@
 			// Note: the pose library adds "tmImage" object to your window (window.tmImage)
 
 			// run the webcam image through the image model
-			
-			
-			// 아래 사이트 보고 정리할것
-			// https://namu.wiki/w/%EC%8B%A0%EC%9D%98%20%ED%83%91
-			
-			
 			async function predict() {
 				var image = document.getElementById('face-image');
 				const prediction = await model.predict(image, false);
 				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 				console.log(prediction[0].className);
 				var resultTitle, resultExplain, resultCeleb;
-				if (document.getElementById('gender').checked) {
+				// if (document.getElementById('gender').checked) {
+			
 					switch (prediction[0].className) {
 						case 'sungjinwoo':
 							resultTitle = '당신은 계속 성장하는 성진우';
@@ -421,18 +421,13 @@
 								'당신은 운동신경은 좋지만, 단체 운동보다는 개인 운동을 좋아하고 조용하게 지내고 싶어합니다. 내성적이라 있는듯 없는듯 조용히 지내는데 막상 이벤트때는 또다른 모습의 양파같은 스타일!';
 							resultCeleb = "";
 							break;
-							
-							
-							
-							
-							
-							
+												
 						default:
 							resultTitle = '알수없음';
 							resultExplain = '';
 							resultCeleb = '';
 					}
-				} 
+			 
 				
 				var title =
 					"<div class='" +
