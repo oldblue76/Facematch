@@ -17,24 +17,24 @@
 
 		<title>나혼렙 캐릭터 테스트</title>
 
-		<meta name="title" content="얼굴로 보는 나 혼자만 레벨업 캐릭터 테스트" />
+		<meta name="title" content="나를 알아보는 테스트" />
 		<meta
 			name="subject"
 			content="얼굴로 보는 인공지능 카카오페이지 웹툰 나 혼자만 레벨업 캐릭터 Face Match 테스트, 나와 닮은 나혼렙 캐릭터를 찾아보세요!"
 		/>
 		<meta
 			name="keywords"
-			content="카카오페이지, 웹툰, Cacaor, webtoon, 인공지능, 얼굴상, face, 닮은, 얼굴상, facial, AI, match, 성진우, 나 혼자만 레벨업, solo levelling, 라헬, 쿤, 악어, 하진성, 하유리,스물다섯번째 성진우, 쿤 아게로 아그니스, 백윤호레이서,"
+			content="카카오페이지, 웹툰, Cacao, webtoon, 인공지능, 얼굴상, face, 닮은, 얼굴상, facial, AI, match, 성진우, 나 혼자만 레벨업, solo levelling, 성진우, 백윤호, 고건희, 우진철, 최종인, 차해인,"
 		/>
 		<meta name="author" content="oldblue" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://disneyface.ga" />
-		<meta property="og:url" content="https://disneyface.ga" />
+		<link rel="canonical" href="https://facematch.ga" />
+		<meta property="og:url" content="https://facematch.ga" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="얼굴로 보는 나 혼자만 레벨업 캐릭터 테스트" />
+		<meta property="og:title" content="얼굴로 보는 나 혼자만 레벨업 캐릭터 성격 테스트" />
 		<meta
 			property="og:description"
-			content="인공지능 나 혼자만 레벨업 캐릭터 Face Match 테스트, 나와 닮은 Naver webtoon 나 혼자만 레벨업 캐릭터를 찾아보세요! 수천장의 나 혼자만 레벨업 웹툰 캐릭터 데이터로 학습한 인공지능이 나의 얼굴로 나 혼자만 레벨업 캐릭터 닮은꼴을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인가능하고 사진 데이터는 그 어디에도 전송되지 않습니다."
+			content="인공지능 나 혼자만 레벨업 캐릭터 Face Match 테스트, 나와 닮은 카카오페이지 webtoon 나 혼자만 레벨업 캐릭터를 찾아보세요! 수천장의 나 혼자만 레벨업 웹툰 캐릭터 데이터로 학습한 인공지능이 나의 얼굴로 나 혼자만 레벨업 캐릭터 닮은꼴을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인가능하고 사진 데이터는 그 어디에도 전송되지 않습니다."
 		/>
 		<meta
 			property="og:image"
@@ -55,7 +55,7 @@
 	<body class="" style="" aria-hidden="false">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="https://disneyface.ga/">얼굴로 보는 나 혼자만 레벨업 캐릭터 테스트</a>
+				<a class="navbar-brand" href="https://facematch.ga/">나를 알아보는 테스트</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -75,17 +75,7 @@
 								oldblue 블로그
 							</a>
 						</li>
-							<li id="goToBlog" class="nav-item active">
-							<a class="nav-link" href="https://disneyface.ga">
-								얼굴로 보는 디즈니 캐릭터 테스트
-							</a>
-						</li>
-							<li id="goToBlog" class="nav-item active">
-							<a class="nav-link" href="https://president.ga">
-								대한민국 대통령상 테스트
-							</a>
-						</li>
-
+						
 						<li
 							class="nav-item active"
 							onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});"
@@ -102,23 +92,24 @@
 			</div>
 		</nav>
 
-		<section class="container d-flex flex-column justify-content-center align-items-center">
-			<span class="select-language">Language</span>
-			<select onchange="changeLanguage(this)" class="custom-select col-8">
-				<option value="ko" lang="ko">한국어</option>
-				<option value="en" lang="en">English</option>
-				<option value="es" lang="es">español</option>
-				<!-- <option value="ja" lang="ja">日本語</option> -->
-				<option value="zh" lang="zh">中文</option>
-				<!-- <option value="vi" lang="vi">tiếng Việt</option>
-				<option value="id" lang="id">Bahasa Indonesia</option>
-				<option value="it" lang="it">Italiano</option>
-				<option value="th" lang="th">ไทย</option> -->
+			<section class="container d-flex flex-column justify-content-center align-items-center">
+			<span class="select-content">다른 테스트(신의탑,디즈니,대통령,직업)👇</span>
+			<select onchange="changecontent(this)" class="custom-select col-8">
+				<option value="sololevelling" content="sololevelling">나 혼자만 레벨업</option>
+				<option value="tog" content="tog">신의탑</option>
+				<option value="disney" content="disney">디즈니 캐릭터</option>
+				<option value="president" content="president">내가 대통령이 될 상인가?</option>
+				<!-- <option value="ja" content="ja">日本語</option> -->
+				<option value="job" content="job">나와 닮은 이는 무슨일을 하고있을까?(작업중)</option>
+				<!-- <option value="vi" content="vi">tiếng Việt</option>
+				<option value="id" content="id">Bahasa Indonesia</option>
+				<option value="it" content="it">Italiano</option>
+				<option value="th" content="th">ไทย</option> -->
 			</select>
 		</section>
 		<script>
 			var ua = navigator.userAgent.toLowerCase();
-			function changeLanguage(lang) {
+			function changecontent(content) {
 				if (
 					(navigator.userAgent.indexOf('Mac OS') > 0 &&
 						navigator.userAgent.indexOf('Safari') <= 0) ||
@@ -127,8 +118,8 @@
 				) {
 					if (ua.match('android') != null) {
 						window.open(
-							'googlechrome://navigate?url=disneyface.ga/' +
-								lang.value +
+							'googlechrome://navigate?url=facematch.ga/' +
+								content.value +
 								'/index.html'
 						); //android
 					} else if (
@@ -137,21 +128,22 @@
 						ua.indexOf('ipod') > -1
 					) {
 						window.location.href =
-							'https://disneyface.ga/' + lang.value + '/index.html';
+							'https://facematch.ga/' + content.value + '/index.html';
 					} else {
 						window.location.href =
-							'https://disneyface.ga/' + lang.value + '/index.html';
+							'https://facematch.ga/' + content.value + '/index.html';
 					}
 				} else {
-					window.location.href = 'https://disneyface.ga/' + lang.value + '/index.html';
+					window.location.href = 'https://facematch.ga/' + content.value + '/index.html';
 				}
 			}
 		</script>
 
 		<section class="section">
-			<h1 class="title">얼굴로 보는 나 혼자만 레벨업 캐릭터 테스트</h1>
+			<h1 class="title">얼굴로 보는 나 혼자만 레벨업 캐릭터 성격 테스트</h1> 
 			<h2 class="subtitle1">성진우, 유진호, 고건희, 우진철, 백윤호, 최종인, 차해인 </h2>
 			<h3 class="subtitle2">나와 닮은 카카오페이지웹툰 나혼렙 캐릭터는 누구일까?</h3>
+			<h3 class="subtitle2">☝ 사진은 어디에도 저장되지 않으니 안심하세요</h3>
 			<h3 class="sr-only">
 				카카오페이지 웹툰 나 혼자만 레벨업 캐릭터 데이터로 학습한 인공지능이 나의 얼굴로 나혼렙 캐릭터와 닮은꼴을 찾아드립니다.
 			</h3>
@@ -341,7 +333,7 @@
 			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
 			// the link to your model provided by Teachable Machine export panel  남자것검토 필요
-			const URL =  'https://teachablemachine.withgoogle.com/models/ehdenWEp-/';
+			const URL =  'https://teachablemachine.withgoogle.com/models/QZDoNV6zs/';
 
 			let model, webcam, labelContainer, maxPredictions;
 
@@ -470,7 +462,7 @@
 						
 					
 						case 'sungjinwoo':
-							labelTitle = '스물다섯번째성진우';
+							labelTitle = '성진우';
 							break;
 						case 'yujinho':
 							labelTitle = '유진호';
