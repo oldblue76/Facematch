@@ -15,7 +15,7 @@
 			crossorigin="anonymous"
 		/>
 
-		<title>얼굴로 보는 신의탑 캐릭터 테스트</title>
+		<title>Finding real me</title>
 
 		<meta name="title" content="얼굴로 보는 신의탑 캐릭터 테스트" />
 		<meta
@@ -28,8 +28,8 @@
 		/>
 		<meta name="author" content="oldblue" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://facematch.ga" />
-		<meta property="og:url" content="https://facematch.ga" />
+		<link rel="canonical" href="https://findingrealme.com" />
+		<meta property="og:url" content="https://findingrealme.com" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="얼굴로 보는 신의탑 캐릭터 테스트" />
 		<meta
@@ -55,7 +55,7 @@
 	<body class="" style="" aria-hidden="false">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="https://facematch.ga/">나를 알아보는 테스트</a>
+				<a class="navbar-brand" href="https://findingrealme.com/">나를 알아보는 테스트</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -96,7 +96,7 @@
 			<span class="select-content">다른 테스트(디즈니,나혼렙,대통령,직업)👇</span>
 			<select onchange="changecontent(this)" class="custom-select col-8">
 				<option value="tog" content="tog">신의탑</option>
-				<option value="disney" content="disney">디즈니 캐릭터</option>
+				<option value="disney" content="disney">디즈니 캐릭터 (성격, 연애)</option>
 				<option value="president" content="president">내가 대통령이 될 상인가?</option>
 				<option value="sololevelling" content="sololevelling">나 혼자만 레벨업</option>
 				<!-- <option value="ja" content="ja">日本語</option> -->
@@ -118,7 +118,7 @@
 				) {
 					if (ua.match('android') != null) {
 						window.open(
-							'googlechrome://navigate?url=facematch.ga/' +
+							'googlechrome://navigate?url=findingrealme.com/' +
 								content.value +
 								'/index.html'
 						); //android
@@ -128,13 +128,13 @@
 						ua.indexOf('ipod') > -1
 					) {
 						window.location.href =
-							'https://facematch.ga/' + content.value + '/index.html';
+							'https://findingrealme.com/' + content.value + '/index.html';
 					} else {
 						window.location.href =
-							'https://facematch.ga/' + content.value + '/index.html';
+							'https://findingrealme.com/' + content.value + '/index.html';
 					}
 				} else {
-					window.location.href = 'https://facematch.ga/' + content.value + '/index.html';
+					window.location.href = 'https://findingrealme.com/' + content.value + '/index.html';
 				}
 			}
 		</script>
@@ -188,7 +188,7 @@
 					accept="image/*"
 				/>
 				<div class="drag-text">
-					<img src="img/upload.svg" class="mt-5 pt-5 upload" />
+					<img src="upload.svg" class="mt-5 pt-5 upload" />
 					<h3 class="mb-5 pb-5 pt-4 upload-text">
 						얼굴 사진을 올려놓거나 눌러서 업로드하세요!
 					</h3>
@@ -420,7 +420,7 @@
 						case 'kallavan':
 							resultTitle = '당신은 선도반장 칼라반';
 							resultExplain =
-								'당신은 의리의 남자이지만 너무 융통성이 없어 다른 사람들에게는 꽉막힌 꼰대 스타일로 보일수도 있습니다. 교칙에 딱맞아야 하는 당신은 선도반장 스타일!';
+								'당신은 의리의 남자이지만 너무 융통성이 없어 다른 사람들에게는 꽉막힌 꼰대 스타일로 보일수도 있습니다. 교칙에 딱맞아야 하는 당신은 선도부장 스타일!';
 							resultCeleb = "";
 							break;	
 							

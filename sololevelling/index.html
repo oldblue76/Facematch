@@ -15,7 +15,7 @@
 			crossorigin="anonymous"
 		/>
 
-		<title>Finding real me</title>
+		<title>Finding real me_나도 모르는 진짜 나를 알아보는 테스트</title>
 
 		<meta name="title" content="나를 알아보는 테스트" />
 		<meta
@@ -95,9 +95,9 @@
 			<section class="container d-flex flex-column justify-content-center align-items-center">
 			<span class="select-content">다른 테스트(신의탑,디즈니,대통령,직업)👇</span>
 			<select onchange="changecontent(this)" class="custom-select col-8">
-				<option value="sololevelling" content="sololevelling">나 혼자만 레벨업</option>
+				<option value="sololevelling" content="sololevelling">나 혼자만 레벨업(공부, 업무처리 스타일)</option>
 				<option value="tog" content="tog">신의탑</option>
-				<option value="disney" content="disney">디즈니 캐릭터</option>
+				<option value="disney" content="disney">디즈니 캐릭터 (성격,연애)</option>
 				<option value="president" content="president">내가 대통령이 될 상인가?</option>
 				<!-- <option value="ja" content="ja">日本語</option> -->
 				<option value="job" content="job">나와 닮은 이는 무슨일을 하고있을까?(작업중)</option>
@@ -140,7 +140,8 @@
 		</script>
 
 		<section class="section">
-			<h1 class="title">얼굴로 보는 나 혼자만 레벨업 캐릭터 성격 테스트</h1> 
+			<h1 class="title">얼굴로 보는 </h1> 
+			<h1 class="title">나혼렙 공부, 업무처리 스타일 테스트</h1> 
 			<h2 class="subtitle1">성진우, 유진호, 고건희, 우진철, 백윤호, 최종인, 차해인 </h2>
 			<h3 class="subtitle2">나와 닮은 카카오페이지웹툰 나혼렙 캐릭터는 누구일까?</h3>
 			<h3 class="subtitle2">☝ 사진은 어디에도 저장되지 않으니 안심하세요</h3>
@@ -373,21 +374,24 @@
 						case 'sungjinwoo':
 							resultTitle = '당신은 계속 성장하는 성진우';
 							resultExplain =
-								'당신은 끊임없는 자기관리의 소유자입니다. 하지만 욱하는 성격과 다른이의 이해도가 떨어져서 트러블도 발생하고 제대로된 연애도 손을 꼽습니다. 완벽한 자기관리 꼰대 스타일!';
-							resultCeleb = "";
+								'당신은 끊임없는 자기관리와 성취를 즐기는 소유자입니다. 한단계 한단계 점수와 등수가 올라가는 것을 즐기면서 마치 시험이나 업무를 게임의 승패처럼 경쟁하는것을 즐깁니다. 다른 사람들 보다 성공, 성적에 집착이 있고 욱하는 성격과 다른이의 이해도가 떨어져서 인간관계에서는 트러블이 발생하기도 합니다. 할일을 미루지 않고 계획을 세워서 꾸준히하는 일신후일신 완벽한 자기관리 꼰대 스타일!';
+							resultCeleb = 
+							<a class="nav-link" href="https://blog.naver.com/oldblue7608">
+								oldblue 블로그
+							</a>;
 							break;
 						
 						case 'yujinho':
 							resultTitle = '당신은 순진무구 유진호';
 							resultExplain =
-								'조용하고 어리숙하지만 결단한 일은 똑부러지게 하는 스타일입니다. 사랑보다는 친구를, 브로멘스를 좋아하지만 눈물이 많고 좋아하는 이에게 집착하는 성격입니다. 교육잘 받은 부자집 외동아들 스타일!';
+								'조용하고 어리숙하지만 결단한 일은 똑부러지게 하는 스타일입니다. 전체적인 학업 성적은 만족스럽게 나오지 않을 수 도 있지만, 타고난 밝은 성격으로 그리 문제 삼지 않습니다. 내인생에 성적은 행복의 기준이 아니야 이정도면 만족하지라고 생각합니다. 하지만 한번 끌리면 그 과목은 파고들어가는 미래 창업가 스타일!';
 							resultCeleb = "";
 							break;
 						
 						case 'gogunhee':
 							resultTitle = '당신은 열정남 고건희';
 							resultExplain =
-								'당신은 누구보다 열정이 넘쳐납니다. 우직한 모습과 열정으로 리더의 역에 어울리지만 조용히 뒤에서 지켜보움직이지 않습니다. 주먹 함부로 쓰지 마세요. 은둔형 학교 짱 스타일!';
+								'당신은 누구보다 열정이 넘쳐납니다. 미래의 꿈과 비젼을 가지고 그 꿈을 이루기 위해서 열정적으로 행동합니다. 당신의 열정과 비젼은 다른 사람에게도 영향을 줄 정도로 리더의 역에 어울립니다. 매우 조용하게 앉아서 공부하지만 다른이들이 믿고 옆에 있기를 원하는 우직한 열정남 스타일!';
 							resultCeleb = "";
 							break;
 							
@@ -395,14 +399,14 @@
 						case 'woojinchul':
 							resultTitle = '당신은 똑부러지는 선도반 우진철';
 							resultExplain =
-								'운동신경도 좋고 의협심이 강한 당신은 선도반에 어울립니다. 남성적인 매력에 댄디한 슈트를 주로 입어서 매력적이지만, 잘못된 일에는 유연함보다는 주먹이 먼저 앞서는 학교 짱 스타일!';
+								'정해진 업무 규율을 지키고 의협심이 강한 당신은 선도반에 어울립니다. 물론 학업 성적도 전반적으로 고르게 좋습니다. 다만 미술이나 문학의 유연함보다는 규칙에 딱 떨어지는것을 좋아하여 답이 정해져있는수학을 좋아합니다. 공부도 잘하고 운동도 잘하는 선도반이나 모범생 스타일!';
 							resultCeleb = "";
 							break;
 						
 						case 'baekyounho':
 							resultTitle = '당신은 감정파 백윤호';
 							resultExplain =
-								'단순한 성격에 자주 욱하기도 하지만, 의리도 상당하고 무엇보다 자신과 같이 있는 사람들을 잘 챙겨주는 스타일입니다. 남에게는 험악하게 보일수있지만 부탁을 거절하지 못하는 츤데레 스타일!';
+								'단순한 성격에 자주 욱하기도 하지만, 의리도 상당하고 무엇보다 자신과 같이 있는 사람들을 잘 챙겨주는 스타일입니다. 계산보다는 인문학을 더 좋아하고 체육이나 예술쪽도 조예가 깊습니다. 또한 학업 성정도 중요하지만 인간관계를 더 중요시 하고 고민합니다. 짐승같은데 감정 표현이 뛰어난 열정 야수파 스타일!';
 							resultCeleb = "";
 							break;
 
@@ -410,15 +414,15 @@
 						case 'choijongin':
 							resultTitle = '당신은 이성적이고 치밀한 최종인';
 							resultExplain =
-								'당신은 옷도 깔끔하게 잘입고 성격도 차분하고 논리적이고 상대방을 상냥하게 대하지만, 상대방은 차갑게 느껴질수도 있습니다. 가장 이성적이고 모범적인 반장 스타입!';
+								'당신은 옷도 깔끔하게 잘입고 성격도 차분하고 논리적이고 상대방을 상냥하게 대하지만, 상대방은 차갑게 느껴질수도 있습니다. 눈치도 엄청 빨라서 분명 공부안한 문제인데 느낌으로 맞추는 감이 좋은 사람입니다. 가장 이성적이고 모범적인 반장 스타입!';
 							resultCeleb = "";
 							break;
 							
 													
 						case 'chahaein':
-							resultTitle = '당신은 모범생 차해인';
+							resultTitle = '당신은 타고난 모범생 차해인';
 							resultExplain =
-								'당신은 운동신경은 좋지만, 단체 운동보다는 개인 운동을 좋아하고 조용하게 지내고 싶어합니다. 내성적이라 있는듯 없는듯 조용히 지내는데 막상 이벤트때는 또다른 모습의 양파같은 스타일!';
+								'당신은 공부도 잘하고 운동신경도 좋지만, 단체 운동보다는 개인 운동을 좋아하고 조용하게 지내고 싶어합니다. 머리도 좋은데 꾸준한 자기관리까지 하여 1등을 놓치지 않습니다. 내성적이라 있는듯 없는듯 조용히 지내면서도 일탈을 그리워해서 시험이 끝나는 날에는 또다른 모습을 보여주는 양파같은 스타일!';
 							resultCeleb = "";
 							break;
 												
