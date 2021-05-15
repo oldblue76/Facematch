@@ -391,6 +391,13 @@ body {
 	background-color: rgba(27, 175, 234, 1);
 }
 
+.blog-link {
+    font-size: 1.5rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #007bff;
+}
+
 .percent-text {
 	font-size: 1rem;
 	color: #ffffff;
