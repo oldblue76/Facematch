@@ -144,6 +144,9 @@ body {
 	color: #35465d;
 }
 
+.custom-select {
+    font-size: 1.3rem;
+}
 
 .title {
 	/*font-size: 3rem;*/
@@ -296,7 +299,7 @@ body {
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(27, 175, 234, 0.2);
+	background-color: rgba(84, 102, 115, 0.2);
 }
 .rachel-bar {
 	position: absolute;
@@ -304,7 +307,7 @@ body {
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(27, 175, 234, 1);
+	background-color: rgba(84, 102, 115, 1);
 }
 
 
@@ -351,7 +354,7 @@ body {
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
+	background-color: rgba(84, 102, 115, 0.2);
 }
 .white-bar {
 	position: absolute;
@@ -359,7 +362,7 @@ body {
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
+	background-color: rgba(84, 102, 115, 1);
 }
 .urec-box {
 	position: absolute;
@@ -385,7 +388,7 @@ body {
 	height: 2rem;
 	border-radius: 10px;
 	width: 100%;
-	background-color: rgba(27, 175, 234, 0.2);
+	background-color: rgba(234, 130, 27, 0.2);
 }
 .rak-bar {
 	position: absolute;
@@ -393,7 +396,7 @@ body {
 	left: 0;
 	height: 2rem;
 	border-radius: 10px;
-	background-color: rgba(27, 175, 234, 1);
+	background-color: rgba(234, 130, 27, 1);
 }
 
 .kallavan-box {
@@ -456,10 +459,10 @@ body {
 	font-size: 1.2rem;
 }
 .white-animal-title {
-	color: #ff6c0a;
+	color: #546673;
 }
 .white-animal-celeb {
-	color: #ff6c0a;
+	color: #546673;
 	font-size: 1.2rem;
 }
 .urec-animal-title {
@@ -470,10 +473,10 @@ body {
 	font-size: 1.2rem;
 }
 .rak-animal-title {
-	color: #548dd4;
+	color: #EA821B;
 }
 .rak-animal-celeb {
-	color: #548dd4;
+	color: #EA821B;
 	font-size: 1.2rem;
 }
 
@@ -514,10 +517,10 @@ body {
 	font-size: 1.2rem;
 }
 .rachel-animal-title {
-	color: #9b6b43;
+	color: #546673;
 }
 .rachel-animal-celeb {
-	color: #9b6b43;
+	color: #546673;
 	font-size: 1.2rem;
 }
 

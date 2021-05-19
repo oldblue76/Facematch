@@ -144,6 +144,9 @@ body {
 	color: #35465d;
 }
 
+.custom-select {
+    font-size: 1.3rem;
+}
 
 .title {
 	/*font-size: 3rem;*/
