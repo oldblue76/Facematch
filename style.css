@@ -97,6 +97,23 @@ body {
 	padding: 10px;
 }
 
+
+.modal-title {
+	/*font-size: 2rem;*/
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+}
+
+.modal-title2 {
+	/*font-size: 2rem;*/
+	line-height: 1.67;
+	text-align: center;
+	color: #0b00ff;
+}
+
+
+
 .try-again-btn {
 	border-radius: 40px;
 	border: solid 1.5px #35465d;
